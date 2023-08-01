@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 
 export default function Item({ cardType, data }) {
   const [type, setType] = useState('exp')
-  console.log(data)
 
   useEffect(() => {
     if (cardType === 'exp') setType('exp')
@@ -21,7 +20,9 @@ export default function Item({ cardType, data }) {
       <div className='item__card__right'>
         <div className='item__card__rightJob'>
           <a href={data.link}>
-            {data.position} - {data.company}
+            {type === 'exp'
+              ? `${data.position} - ${data.company}`
+              : `${data.title}`}
           </a>
           <p>{data.description}</p>
         </div>

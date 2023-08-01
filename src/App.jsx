@@ -2,6 +2,7 @@ import React from 'react'
 import InfoSection from './components/InfoSection'
 import About from './components/About'
 import Experience from './components/Experience'
+import FeaturedProjects from './components/FeaturedProjects'
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <div className='displaySection'>
           <About />
           <Experience />
+          <FeaturedProjects />
         </div>
       </div>
     </div>

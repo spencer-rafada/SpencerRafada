@@ -115,7 +115,7 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   padding: 0.15rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 .displaySection .displaySection__experience .view__resume:hover {
   color: #75c8ff;
