@@ -2,10 +2,10 @@
 
 // Colors
 $textColor: #D8E2FD;
-$textColorGray: #b7b7b7;
+$textColorGray: #c7c7c7;
 $backgroundColor: #070a13;
 $primaryColor: #3061f3;
-$secondaryColor: #041548;
+$secondaryColor: #062c47;
 $accentColor: #2659f2;
 
 // Breakpoints
@@ -109,5 +109,88 @@ body {
   margin-top: 3rem;
   @media screen and (min-width: $mediumScreen) {
     margin-top: 0;
+    overflow-y: scroll;
+  }
+  // About Section
+  .displaySection__about {
+    color: $textColorGray;
+    margin-bottom: 4rem;
+    p {
+      line-height: 1.5rem;
+      b {
+        color: $textColor;
+      }
+    }
+  }
+
+  .displaySection__experience {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.15rem;
+    margin-bottom: 3rem;
+    .view__resume:hover {
+      color: #75c8ff;
+      cursor: pointer;
+    }
+  }
+}
+
+// Item Card
+.item__card {
+  // UX Testing
+  // background-color: red;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 1rem;
+
+  .item__card__left {
+    grid-column: 1/2;
+    p {
+      margin: 0;
+      font-size: 0.8rem;
+      color: $textColorGray;
+    }
+  }
+  .item__card__right {
+    grid-column: 2/3;
+    .item__card__rightJob{
+      a {
+        color: $textColor;
+        text-decoration: none;
+      }
+      a:visited {
+        color: $textColor;
+      }
+      p {
+        color: $textColorGray;
+        line-height: 1.5rem;
+      }
+    }
+    .item__card__toolsContainer {
+      display: flex;
+      gap: 1rem;
+      .item__card__tools {
+        background-color: $secondaryColor;
+        color: #75c8ff;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.item__card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px $accentColor;
+  .item__card__right {
+    .item__card__rightJob{
+      a {
+        color: $primaryColor;
+      }
+    }
   }
 }
