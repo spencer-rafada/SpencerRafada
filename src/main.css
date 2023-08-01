@@ -11,7 +11,7 @@
 }
 body {
   font-family: "Inter", serif;
-  background-color: #0d1222;
+  background-color: #070a13;
   color: #D8E2FD;
   padding: 2rem;
 }
@@ -97,6 +97,7 @@ body {
 @media screen and (min-width: 48em) {
   .displaySection {
     margin-top: 0;
+    overflow-y: scroll;
   }
 }
 .displaySection .displaySection__about {
@@ -108,4 +109,65 @@ body {
 }
 .displaySection .displaySection__about p b {
   color: #D8E2FD;
+}
+.displaySection .displaySection__experience {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0.15rem;
+  margin-bottom: 3rem;
+}
+.displaySection .displaySection__experience .view__resume:hover {
+  color: #75c8ff;
+  cursor: pointer;
+}
+
+.item__card {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.item__card .item__card__left {
+  grid-column: 1/2;
+}
+.item__card .item__card__left p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #c7c7c7;
+}
+.item__card .item__card__right {
+  grid-column: 2/3;
+}
+.item__card .item__card__right .item__card__rightJob a {
+  color: #D8E2FD;
+  text-decoration: none;
+}
+.item__card .item__card__right .item__card__rightJob a:visited {
+  color: #D8E2FD;
+}
+.item__card .item__card__right .item__card__rightJob p {
+  color: #c7c7c7;
+  line-height: 1.5rem;
+}
+.item__card .item__card__right .item__card__toolsContainer {
+  display: flex;
+  gap: 1rem;
+}
+.item__card .item__card__right .item__card__toolsContainer .item__card__tools {
+  background-color: #062c47;
+  color: #75c8ff;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+}
+
+.item__card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px #2659f2;
+}
+.item__card:hover .item__card__right .item__card__rightJob a {
+  color: #3061f3;
 }/*# sourceMappingURL=main.css.map */

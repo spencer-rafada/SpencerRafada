@@ -1,6 +1,7 @@
 import React from 'react'
 import InfoSection from './components/InfoSection'
 import About from './components/About'
+import Experience from './components/Experience'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
         <InfoSection />
         <div className='displaySection'>
           <About />
+          <Experience />
         </div>
       </div>
     </div>
