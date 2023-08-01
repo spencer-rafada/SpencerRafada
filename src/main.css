@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+@keyframes hoverAnimation {
+  0% {
+    transform: scale(1);
+    color: #b7b7b7;
+  }
+  100% {
+    transform: scale(1.1);
+    color: #D8E2FD;
+  }
+}
+body {
+  font-family: "Inter", serif;
+  background-color: #070a13;
+  color: #D8E2FD;
+  padding: 2rem;
+}
+@media only screen and (min-width: 40em) {
+  body {
+    padding: 4rem;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  .mainSection {
+    height: calc(100vh - 8rem);
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .mainSection__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+    margin: 0 6.5rem;
+    height: 100%;
+  }
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.infoSection .infoSection__headerInfo {
+  margin-bottom: 3rem;
+}
+.infoSection .infoSection__headerInfo h3 {
+  font-weight: 500;
+}
+.infoSection .infoSection__headerInfo p {
+  color: #b7b7b7;
+  font-weight: 300;
+}
+.infoSection .infoSection__contactSection {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  width: 40%;
+  color: #b7b7b7;
+}
+.infoSection .infoSection__contactSection svg {
+  cursor: pointer;
+}
+.infoSection .infoSection__contactSection svg:hover {
+  animation-name: hoverAnimation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  color: #D8E2FD;
+  transform: scale(1.1);
+}
+
+.displaySection {
+  margin-top: 3rem;
+}
+@media screen and (min-width: 48em) {
+  .displaySection {
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
