@@ -2,7 +2,7 @@
 @keyframes hoverAnimation {
   0% {
     transform: scale(1);
-    color: #b7b7b7;
+    color: #c7c7c7;
   }
   100% {
     transform: scale(1.1);
@@ -11,7 +11,7 @@
 }
 body {
   font-family: "Inter", serif;
-  background-color: #070a13;
+  background-color: #0d1222;
   color: #D8E2FD;
   padding: 2rem;
 }
@@ -69,7 +69,7 @@ body {
 .infoSection .infoSection__headerInfo p {
   width: 70%;
   margin-top: 0rem;
-  color: #b7b7b7;
+  color: #c7c7c7;
   font-weight: 300;
 }
 .infoSection .infoSection__contactSection {
@@ -78,7 +78,7 @@ body {
   justify-content: space-between;
   font-size: 2rem;
   width: 40%;
-  color: #b7b7b7;
+  color: #c7c7c7;
 }
 .infoSection .infoSection__contactSection svg {
   cursor: pointer;
@@ -98,4 +98,14 @@ body {
   .displaySection {
     margin-top: 0;
   }
+}
+.displaySection .displaySection__about {
+  color: #c7c7c7;
+  margin-bottom: 4rem;
+}
+.displaySection .displaySection__about p {
+  line-height: 1.5rem;
+}
+.displaySection .displaySection__about p b {
+  color: #D8E2FD;
 }/*# sourceMappingURL=main.css.map */

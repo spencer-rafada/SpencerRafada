@@ -2,8 +2,8 @@
 
 // Colors
 $textColor: #D8E2FD;
-$textColorGray: #b7b7b7;
-$backgroundColor: #070a13;
+$textColorGray: #c7c7c7;
+$backgroundColor: #0d1222;
 $primaryColor: #3061f3;
 $secondaryColor: #041548;
 $accentColor: #2659f2;
@@ -109,5 +109,16 @@ body {
   margin-top: 3rem;
   @media screen and (min-width: $mediumScreen) {
     margin-top: 0;
+  }
+  // About Section
+  .displaySection__about {
+    color: $textColorGray;
+    margin-bottom: 4rem;
+    p {
+      line-height: 1.5rem;
+      b {
+        color: $textColor;
+      }
+    }
   }
 }
