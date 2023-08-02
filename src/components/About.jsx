@@ -1,8 +1,9 @@
 import React from 'react'
 
-export default function About() {
+export default function About({ aRef }) {
+  console.log(aRef)
   return (
-    <div className='displaySection__about'>
+    <div ref={aRef} className='displaySection__about'>
       <p>
         As a child, my fascination with computers began with the allure of video
         games, which eventually led me to delve into programming. However, it

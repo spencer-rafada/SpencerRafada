@@ -26,6 +26,23 @@ $extraLargeScreen: 80em;
   }
 }
 
+@keyframes navAnimationIn {
+  0% {
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.5);
+  }
+}
+@keyframes navAnimationOut {
+  0% {
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
 body {
   font-family: 'Inter', serif;
   background-color: $backgroundColor;
@@ -76,12 +93,42 @@ body {
       margin-top: 0rem;
       margin-bottom: 0.8rem;
       font-weight: 500;
+      color: $primaryColor;
     }
     p {
       width: 70%;
       margin-top: 0rem;
       color: $textColorGray;
       font-weight: 300;
+    }
+  }
+  .infoSection__navBar {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    svg {
+      cursor: pointer;
+      color: $secondaryColor;
+      animation-name: navAnimationOut;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+    }
+    .active {
+      color: $primaryColor;
+      transform: scale(1.5);
+      margin: 1rem;
+      animation-name: navAnimationIn;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+    }
+    .line {
+      font-size: 0.05rem;
+      cursor: default;
+      color: $secondaryColor;
+      width: 3.5rem;
+      background-color: $secondaryColor;
     }
   }
   .infoSection__contactSection {
@@ -136,6 +183,10 @@ body {
   }
 
   .displaySection__projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.15rem;
     margin-bottom: 4rem;
   }
 
@@ -171,8 +222,8 @@ body {
     }
     .imgContainer {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: start;
+      align-items: start;
       width: 100%;
       height: 100%;
       img {
@@ -207,6 +258,7 @@ body {
         padding: 0.5rem;
         border-radius: 1rem;
         font-size: 0.8rem;
+        text-transform: capitalize;
       }
     }
   }

@@ -7,8 +7,9 @@ import {
   BiLogoGmail,
   BiLogoInstagramAlt,
 } from 'react-icons/bi'
+import Navbar from './Navbar'
 
-export default function InfoSection() {
+export default function InfoSection({ aboutRef, expRef, projRef }) {
   const handleNavBarClick = (icon) => {
     let link = ''
     if (icon === 'github') link = 'https://github.com/spencer-rafada'
@@ -29,7 +30,7 @@ export default function InfoSection() {
             be impactful in other's lives.
           </p>
         </div>
-        <div className='infoSection__navBar'>NAV</div>
+        <Navbar aboutRef={aboutRef} expRef={expRef} projRef={projRef} />
       </div>
       <div className='infoSection__contactSection'>
         <BiLogoGithub onClick={() => handleNavBarClick('github')} />
