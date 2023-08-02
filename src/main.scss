@@ -128,10 +128,26 @@ body {
     flex-direction: column;
     gap: 1.5rem;
     padding: 0.15rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     .view__resume:hover {
       color: #75c8ff;
       cursor: pointer;
+    }
+  }
+
+  .displaySection__projects {
+    margin-bottom: 4rem;
+  }
+
+  .displaySection__footer {
+    p {
+      text-align: center;
+      font-size: 0.8rem;
+      color: $textColorGray;
+      a, a:visited {
+        color: #75c8ff;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -153,6 +169,18 @@ body {
       font-size: 0.8rem;
       color: $textColorGray;
     }
+    .imgContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
+    }
   }
   .item__card__right {
     grid-column: 2/3;
@@ -172,6 +200,7 @@ body {
     .item__card__toolsContainer {
       display: flex;
       gap: 1rem;
+      flex-wrap: wrap;
       .item__card__tools {
         background-color: $secondaryColor;
         color: #75c8ff;

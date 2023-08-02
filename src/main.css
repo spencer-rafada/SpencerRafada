@@ -115,11 +115,23 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   padding: 0.15rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 .displaySection .displaySection__experience .view__resume:hover {
   color: #75c8ff;
   cursor: pointer;
+}
+.displaySection .displaySection__projects {
+  margin-bottom: 4rem;
+}
+.displaySection .displaySection__footer p {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #c7c7c7;
+}
+.displaySection .displaySection__footer p a, .displaySection .displaySection__footer p a:visited {
+  color: #75c8ff;
+  text-decoration: none;
 }
 
 .item__card {
@@ -138,6 +150,19 @@ body {
   font-size: 0.8rem;
   color: #c7c7c7;
 }
+.item__card .item__card__left .imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.item__card .item__card__left .imgContainer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
 .item__card .item__card__right {
   grid-column: 2/3;
 }
@@ -155,6 +180,7 @@ body {
 .item__card .item__card__right .item__card__toolsContainer {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 .item__card .item__card__right .item__card__toolsContainer .item__card__tools {
   background-color: #062c47;
