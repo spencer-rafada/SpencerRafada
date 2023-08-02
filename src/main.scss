@@ -43,9 +43,9 @@ $extraLargeScreen: 80em;
   }
 }
 
-body {
+main {
   font-family: 'Inter', serif;
-  background-color: $backgroundColor;
+  // background-color: $backgroundColor;
   color: $textColor;
   padding: 2rem;
   @media only screen and (min-width: $smallScreen) {
@@ -270,7 +270,7 @@ body {
   .item__card__right {
     .item__card__rightJob{
       a {
-        color: $primaryColor;
+        color: #75c8ff;
       }
     }
   }
