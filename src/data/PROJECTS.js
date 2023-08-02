@@ -34,7 +34,7 @@ const projects = [
     madeAt: 'BYU-I',
     tools: ['JavaScript', 'CSS'],
     link: 'https://spencer-rafada.github.io/kora-s-treats/',
-    image: '/src/assets/korastreat_thumbnail.png',
+    image: 'korastreat_thumbnail.png',
   },
   {
     date: '2022',
