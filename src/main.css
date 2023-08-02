@@ -25,14 +25,13 @@
     transform: scale(1);
   }
 }
-body {
+main {
   font-family: "Inter", serif;
-  background-color: #070a13;
   color: #D8E2FD;
   padding: 2rem;
 }
 @media only screen and (min-width: 40em) {
-  body {
+  main {
     padding: 4rem;
   }
 }
@@ -246,5 +245,5 @@ body {
   box-shadow: 0 0 5px #2659f2;
 }
 .item__card:hover .item__card__right .item__card__rightJob a {
-  color: #3061f3;
+  color: #75c8ff;
 }/*# sourceMappingURL=main.css.map */

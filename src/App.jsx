@@ -4,6 +4,7 @@ import About from './components/About'
 import Experience from './components/Experience'
 import FeaturedProjects from './components/FeaturedProjects'
 import Footer from './components/Footer'
+import StarfieldAnimation from 'react-starfield-animation'
 
 export default function App() {
   const aboutRef = useRef(null)
@@ -11,16 +12,37 @@ export default function App() {
   const projRef = useRef(null)
 
   return (
-    <div className='mainSection'>
-      <div className='mainSection__grid'>
-        <InfoSection aboutRef={aboutRef} expRef={expRef} projRef={projRef} />
-        <div className='displaySection'>
-          <About aRef={aboutRef} />
-          <Experience aRef={expRef} />
-          <FeaturedProjects aRef={projRef} />
-          <Footer />
+    <>
+      <StarfieldAnimation
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          'z-index': '-5',
+          'background-color': '#070a13',
+        }}
+        numParticles={400}
+        particleSpeed={0}
+        dx={0.000000001} // x speed of stars in px/frame, default 0.05
+        dy={0.000000001}
+      />
+      <main>
+        <div className='mainSection'>
+          <div className='mainSection__grid'>
+            <InfoSection
+              aboutRef={aboutRef}
+              expRef={expRef}
+              projRef={projRef}
+            />
+            <div className='displaySection'>
+              <About aRef={aboutRef} />
+              <Experience aRef={expRef} />
+              <FeaturedProjects aRef={projRef} />
+              <Footer />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </main>
+    </>
   )
 }
