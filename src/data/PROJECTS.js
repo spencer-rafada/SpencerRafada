@@ -15,7 +15,7 @@ const projects = [
       'MongoDB',
     ],
     link: 'https://arkad-4hz9.onrender.com/',
-    image: '/src/assets/arkad_thumbnail.png',
+    image: 'arkad_thumbnail.png',
   },
   {
     date: '2023',
@@ -24,7 +24,7 @@ const projects = [
     madeAt: 'Personal Project',
     tools: ['react', 'NodeJS', 'Express', 'MongoDB', 'SCSS', 'Trello'],
     link: 'https://hanaandspencer.onrender.com/',
-    image: '/src/assets/weddingwebsite_thumbnail.png',
+    image: 'weddingwebsite_thumbnail.png',
   },
   {
     date: '2022',
@@ -44,7 +44,7 @@ const projects = [
     madeAt: 'BYU-I',
     tools: ['react', 'Firebase', 'Canvas', 'Trello'],
     link: '',
-    image: '/src/assets/mathninja_thumbnail.png',
+    image: 'mathninja_thumbnail.png',
   },
   {
     date: '2023',
@@ -54,7 +54,7 @@ const projects = [
     madeAt: 'BYU-I',
     tools: ['REST', 'NodeJS', 'Express', 'MongoDB', 'Trello'],
     link: 'https://youtu.be/lFlTZcN_cKs',
-    image: '/src/assets/spruce_thumbnail.png',
+    image: 'spruce_thumbnail.png',
   },
 ]
 
