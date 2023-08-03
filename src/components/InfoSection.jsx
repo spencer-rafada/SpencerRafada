@@ -23,7 +23,10 @@ export default function InfoSection({ aboutRef, expRef, projRef }) {
     <div className='infoSection'>
       <div className='infoSection__header'>
         <div className='infoSection__headerInfo'>
-          <h1>Spencer Rafada</h1>
+          <div className='infoSection__imgHeader'>
+            <img src='/spencer.jpg' alt='Portrait of Spencer Rafada' />
+            <h1>Spencer Rafada</h1>
+          </div>
           <h3>Currently looking for full time job opportunities</h3>
           <p>
             It motivates me to create applications that will solve problems and

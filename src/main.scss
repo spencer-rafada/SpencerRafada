@@ -113,11 +113,23 @@ main {
   height: 100%;
   .infoSection__headerInfo {
     margin-bottom: 3rem;  
-    h1 {
+    .infoSection__imgHeader{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
       margin-bottom: 0.5rem;
-      font-size: 2rem;
-      @media screen and (min-width: $smallScreen) {
-        font-size: 3rem;
+      img {
+        max-height: 4rem;
+        width: 4rem;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+      h1 {
+        margin: 0rem;
+        font-size: 2rem;
+        @media screen and (min-width: $smallScreen) {
+          font-size: 3rem;
+        }
       }
     }
     h3 {

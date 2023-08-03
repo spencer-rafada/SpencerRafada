@@ -104,12 +104,25 @@ main {
 .infoSection .infoSection__headerInfo {
   margin-bottom: 3rem;
 }
-.infoSection .infoSection__headerInfo h1 {
+.infoSection .infoSection__headerInfo .infoSection__imgHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   margin-bottom: 0.5rem;
+}
+.infoSection .infoSection__headerInfo .infoSection__imgHeader img {
+  max-height: 4rem;
+  width: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.infoSection .infoSection__headerInfo .infoSection__imgHeader h1 {
+  margin: 0rem;
   font-size: 2rem;
 }
 @media screen and (min-width: 40em) {
-  .infoSection .infoSection__headerInfo h1 {
+  .infoSection .infoSection__headerInfo .infoSection__imgHeader h1 {
     font-size: 3rem;
   }
 }
