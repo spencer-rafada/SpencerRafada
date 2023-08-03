@@ -154,20 +154,34 @@ main {
     @media screen and (min-width: $mediumScreen) {
       display: flex;
     }
-    svg {
-      cursor: pointer;
-      color: $secondaryColor;
-      animation-name: navAnimationOut;
-      animation-duration: 0.5s;
-      animation-timing-function: ease;
-    }
     .active {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       color: $primaryColor;
       transform: scale(1.5);
       margin: 1rem;
       animation-name: navAnimationIn;
       animation-duration: 0.5s;
       animation-timing-function: ease;
+      svg {
+        color: $primaryColor;
+      }
+      p{
+        font-size: 0.5rem;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+    .inactive {
+      color: $secondaryColor;
+      animation-name: navAnimationOut;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+      p {
+        display: none;
+      }
     }
     .line {
       font-size: 0.05rem;
