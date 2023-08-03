@@ -104,12 +104,25 @@ main {
 .infoSection .infoSection__headerInfo {
   margin-bottom: 3rem;
 }
-.infoSection .infoSection__headerInfo h1 {
+.infoSection .infoSection__headerInfo .infoSection__imgHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   margin-bottom: 0.5rem;
+}
+.infoSection .infoSection__headerInfo .infoSection__imgHeader img {
+  max-height: 4rem;
+  width: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.infoSection .infoSection__headerInfo .infoSection__imgHeader h1 {
+  margin: 0rem;
   font-size: 2rem;
 }
 @media screen and (min-width: 40em) {
-  .infoSection .infoSection__headerInfo h1 {
+  .infoSection .infoSection__headerInfo .infoSection__imgHeader h1 {
     font-size: 3rem;
   }
 }
@@ -137,20 +150,34 @@ main {
     display: flex;
   }
 }
-.infoSection .infoSection__navBar svg {
-  cursor: pointer;
-  color: #062c47;
-  animation-name: navAnimationOut;
-  animation-duration: 0.5s;
-  animation-timing-function: ease;
-}
 .infoSection .infoSection__navBar .active {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #3061f3;
   transform: scale(1.5);
   margin: 1rem;
   animation-name: navAnimationIn;
   animation-duration: 0.5s;
   animation-timing-function: ease;
+}
+.infoSection .infoSection__navBar .active svg {
+  color: #3061f3;
+}
+.infoSection .infoSection__navBar .active p {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+.infoSection .infoSection__navBar .inactive {
+  color: #062c47;
+  animation-name: navAnimationOut;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+.infoSection .infoSection__navBar .inactive p {
+  display: none;
 }
 .infoSection .infoSection__navBar .line {
   font-size: 0.05rem;

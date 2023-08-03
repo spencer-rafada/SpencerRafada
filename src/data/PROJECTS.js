@@ -43,7 +43,7 @@ const projects = [
       'Single Page Application that gamifies mathematics into Fruit Ninja. I was part of a group when we created this app.',
     madeAt: 'BYU-I',
     tools: ['react', 'Firebase', 'Canvas', 'Trello'],
-    link: '',
+    link: 'https://mathninja-6aks.onrender.com',
     image: 'mathninja_thumbnail.png',
   },
   {

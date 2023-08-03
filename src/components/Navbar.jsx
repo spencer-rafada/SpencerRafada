@@ -24,20 +24,29 @@ export default function Navbar({ aboutRef, expRef, projRef }) {
 
   return (
     <div className='infoSection__navBar'>
-      <GoPersonFill
-        className={active === 'about' ? `active` : null}
+      <div
+        className={active === 'about' ? `active` : `inactive`}
         onClick={() => handleNavClick('about')}
-      />
+      >
+        <GoPersonFill />
+        <p>About</p>
+      </div>
       <span className='line'>x</span>
-      <MdWork
-        className={active === 'work' ? `active` : null}
+      <div
+        className={active === 'work' ? `active` : `inactive`}
         onClick={() => handleNavClick('work')}
-      />
+      >
+        <MdWork />
+        <p>Experience</p>
+      </div>
       <span className='line'>x</span>
-      <AiFillCode
-        className={active === 'proj' ? `active` : null}
+      <div
+        className={active === 'proj' ? `active` : `inactive`}
         onClick={() => handleNavClick('proj')}
-      />
+      >
+        <AiFillCode />
+        <p>Projects</p>
+      </div>
     </div>
   )
 }
