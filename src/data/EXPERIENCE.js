@@ -4,7 +4,7 @@ const experience = [
     company: 'FamilySearch',
     position: 'Frontend React Developer Intern',
     description:
-      "Developed and maintained multiple React components by practicing test-driven development leading to increased code coverage and maintainability and stakeholder's satisfaction",
+      'Developed 10 React components used in production and wrote 20+ unit tests resulting in boosted test coverage and code quality',
     tools: ['React', 'Git', 'Jest', 'TDD', 'Agile'],
     link: 'https://www.familysearch.org/getinvolved/',
   },
@@ -13,7 +13,7 @@ const experience = [
     company: 'Subitt',
     position: 'Frontend React Developer',
     description:
-      "Developed frontend components and frameworks by planning, designing, and writing code based on feature's functionality",
+      'Created 15+ React components, refactored 10+ components, and restructured project resulting in increased developer experience and code maintainability',
     tools: ['React', 'Git', 'Agile', 'Figma'],
     link: 'https://subitt.io/',
   },
@@ -22,7 +22,7 @@ const experience = [
     company: 'Brigham Young University - Idaho',
     position: `Manager Assistant`,
     description:
-      'Implemented agile workflow in a team of five student employees, leading to finishing projects 20% faster and efficient use of time. Implemented new onboarding system and file management system to build work structure and processes, leading to better trained new student employees',
+      'Monitored work hours for 34 weeks and analyzed data through R programming by analysis and visualization leading to data driven decision in student employment',
     tools: ['Microsoft Office', 'R'],
     link: 'https://ibelong.byui.edu/club_signup?group_type=34469&search=online+academic&category_tags=&order=name_asc',
   },
