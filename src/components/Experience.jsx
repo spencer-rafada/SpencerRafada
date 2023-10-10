@@ -4,7 +4,7 @@ import Item from './Item'
 
 export default function Experience({ aRef }) {
   const handleViewResume = () => {
-    window.open('/SpencerRafada.pdf', '_blank')
+    window.open('SpencerRafada.pdf', '_blank')
   }
   return (
     <div ref={aRef} className='displaySection__experience'>
