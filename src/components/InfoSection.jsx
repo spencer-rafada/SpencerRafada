@@ -27,7 +27,7 @@ export default function InfoSection({ aboutRef, expRef, projRef }) {
             <img src='/spencer.jpg' alt='Portrait of Spencer Rafada' />
             <h1>Spencer Rafada</h1>
           </div>
-          <h3>Currently looking for full time job opportunities</h3>
+          <h3>Web Developer Intern at FamilySearch</h3>
           <p>
             It motivates me to create applications that will solve problems and
             be impactful in other's lives.

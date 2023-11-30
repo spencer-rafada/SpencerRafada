@@ -1,6 +1,6 @@
 const experience = [
   {
-    date: 'April 2023 - July 2023',
+    date: 'April 2023 - Present',
     company: 'FamilySearch',
     position: 'Frontend React Developer Intern',
     description:
