@@ -1,6 +1,15 @@
 const projects = [
   {
     date: '2023',
+    title: 'Diab10',
+    description: 'Diab10 Albion Online is a bot tracks attendance and gives priority to those who are active in playing the game Albion Online. I created this project to help out friends who use Discord often.',
+    madeAt: 'Personal Project',
+    tools: ['NodeJS', 'DiscordJS', 'MongoDB'],
+    link: 'https://github.com/spencer-rafada/Diab10-AO',
+    image: 'diab10_thumbnail.png',
+  },
+  {
+    date: '2023',
     title: 'Arkad',
     description:
       'Full Stack Web App that guides user to grow their wealth and finances through smart goals, financial tracker, and surrounding yourself with like minded people.',
