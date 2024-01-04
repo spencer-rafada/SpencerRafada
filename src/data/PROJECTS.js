@@ -1,5 +1,20 @@
 const projects = [
   {
+    date: '2024',
+    title: '2024 Tracker',
+    description:
+      'Single Page Application to keep track of all the goals I set for the year 2024. This app fetches data from Google Spreadsheets and displays a simple UI.',
+    tools: [
+      'react',
+      'TypeScript',
+      'GitHub Actions',
+      'SheetDB.io',
+      'Vite',
+    ],
+    link: 'https://spencer-rafada.github.io/2024-Tracker/',
+    image: '2024tracker_thumbnail.png',
+  },
+  {
     date: '2023',
     title: 'Diab10',
     description: 'Diab10 Albion Online is a bot tracks attendance and gives priority to those who are active in playing the game Albion Online. I created this project to help out friends who use Discord often.',
