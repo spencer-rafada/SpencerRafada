@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.4%;
+    --radius: 0.5rem;
+    
+    /* VS Code Dark+ Theme Colors */
+    --color-code-bg: #1e1e1e;
+    --color-code-border: #3e3e42;
+    --color-code-blue: #569cd6;
+    --color-code-green: #6a9955;
+    --color-code-orange: #ce9178;
+    --color-code-purple: #c586c0;
+    --color-code-yellow: #dcdcaa;
+    --color-code-red: #f44747;
+  }
+
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 210 11% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 11% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 11% 15%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 210 40% 94%;
+    --secondary-foreground: 210 11% 15%;
+    --muted: 210 40% 94%;
+    --muted-foreground: 210 13% 45%;
+    --accent: 210 40% 94%;
+    --accent-foreground: 210 11% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 40% 90%;
+    --input: 210 40% 90%;
+    --ring: 217 91% 60%;
+    
+    /* Light theme code colors */
+    --color-code-bg: #f8f9fa;
+    --color-code-border: #e1e5e9;
+    --color-code-blue: #0366d6;
+    --color-code-green: #28a745;
+    --color-code-orange: #f66a0a;
+    --color-code-purple: #6f42c1;
+    --color-code-yellow: #ffd33d;
+    --color-code-red: #d73a49;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 sm:px-8 lg:px-12 xl:px-16;
+  }
+
+  .max-width-container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .code-accent {
+    @apply text-primary;
+  }
+
+  .terminal-border {
+    @apply border border-border rounded-lg bg-card/50;
+  }
+
+  .glass-effect {
+    @apply bg-card/20 backdrop-blur-sm border border-border/50;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
