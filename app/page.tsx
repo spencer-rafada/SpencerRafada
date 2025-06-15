@@ -47,7 +47,7 @@ export default function Home() {
           size={16}
           className='text-muted-foreground group-hover:text-foreground'
         />
-        K
+        <span className="hidden sm:inline">K</span>
       </button>
     </>
   )
