@@ -84,13 +84,6 @@ export default function Contact() {
       color: 'text-slate-400 hover:text-slate-300',
       description: 'Check out my code',
     },
-    {
-      name: 'Resume',
-      icon: FileText,
-      href: '/SpencerRafada.pdf',
-      color: 'text-green-400 hover:text-green-300',
-      description: 'Download my resume',
-    },
   ]
 
   return (

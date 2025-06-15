@@ -8,7 +8,7 @@ const experience = [
   {
     date: '2025',
     company: 'VIUS Built',
-    position: 'Software Engineer (Founding Engineer)',
+    position: 'Software Engineer',
     achievements: [
       'Enabled 10 businesses to manage thousands of subcontractors by building Trade Partner Directory feature using TypeScript, Node.js, and PostgreSQL through centralized compliance system',
       'Shipped features end-to-end with minimal oversight by owning complete development from scoping to deployment across backend architecture, frontend UX, and CI/CD pipelines',
@@ -69,7 +69,7 @@ export default function Experience() {
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const [showAll, setShowAll] = useState(false)
-  
+
   const displayedExperience = showAll ? experience : experience.slice(0, 1)
 
   const containerVariants = {
@@ -208,9 +208,9 @@ export default function Experience() {
                 className='inline-flex items-center gap-2 px-6 py-3 glass-effect hover:bg-slate-800/30 text-slate-100 rounded-lg transition-all duration-300 font-medium group'
               >
                 <span>Show More Experience</span>
-                <ChevronDown 
-                  size={20} 
-                  className="group-hover:translate-y-1 transition-transform duration-300" 
+                <ChevronDown
+                  size={20}
+                  className='group-hover:translate-y-1 transition-transform duration-300'
                 />
               </button>
             </motion.div>

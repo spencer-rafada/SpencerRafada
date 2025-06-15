@@ -114,11 +114,6 @@ export function CommandDialog({ open, onOpenChange }: CommandDialogProps) {
             <span>LinkedIn</span>
             <ExternalLink className="ml-auto h-3 w-3" />
           </CommandItem>
-          <CommandItem onSelect={() => openLink('/SpencerRafada.pdf')}>
-            <FileText className="mr-2 h-4 w-4" />
-            <span>Resume</span>
-            <ExternalLink className="ml-auto h-3 w-3" />
-          </CommandItem>
           <CommandItem onSelect={() => window.location.href = 'mailto:neilspencerrafada@gmail.com'}>
             <Mail className="mr-2 h-4 w-4" />
             <span>Email</span>
