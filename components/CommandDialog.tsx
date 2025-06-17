@@ -83,7 +83,7 @@ export function CommandDialog({ open, onOpenChange }: CommandDialogProps) {
 
         <CommandSeparator />
 
-        <CommandGroup heading="Theme">
+        {/* <CommandGroup heading="Theme">
           <CommandItem onSelect={() => setTheme('light')}>
             <Sun className="mr-2 h-4 w-4" />
             <span>Light</span>
@@ -99,7 +99,7 @@ export function CommandDialog({ open, onOpenChange }: CommandDialogProps) {
             <span>System</span>
             {theme === 'system' && <span className="ml-auto text-xs">•</span>}
           </CommandItem>
-        </CommandGroup>
+        </CommandGroup> */}
 
         <CommandSeparator />
 
