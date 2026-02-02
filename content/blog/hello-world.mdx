@@ -1,0 +1,55 @@
+---
+title: "Building My Portfolio with Next.js 14"
+description: "A deep dive into how I built this portfolio site using Next.js 14, Tailwind CSS, and Framer Motion, including the design decisions behind the developer-themed UI."
+date: "2026-02-02"
+tags: ["Next.js", "React", "Tailwind CSS", "Portfolio"]
+published: false
+---
+
+## Why Next.js 14?
+
+When I set out to rebuild my portfolio, I wanted a framework that would give me
+**great performance** out of the box while keeping the developer experience smooth.
+[Next.js 14](https://nextjs.org/) with the App Router was the natural choice.
+
+### The App Router Advantage
+
+The App Router brings React Server Components to the table, which means I can
+fetch data and render content on the server without shipping unnecessary JavaScript
+to the client.
+
+```typescript
+// Example: A simple Server Component
+export default async function BlogPost({ params }: { params: { slug: string } }) {
+  const post = await getPostBySlug(params.slug)
+  return <article>{post.content}</article>
+}
+```
+
+## Design Philosophy
+
+I wanted the site to feel like a **developer's workspace** -- terminal-style code
+blocks, monospace fonts for accents, and a dark theme that feels like home.
+
+> "Good design is as little design as possible." -- Dieter Rams
+
+### Key Design Elements
+
+- **Glass morphism effects** for card backgrounds
+- **Framer Motion** for scroll-triggered animations
+- **Code-style comments** as section descriptors
+- **VS Code Dark+** inspired color palette
+
+## What I Learned
+
+Building this portfolio taught me several things:
+
+1. **Framer Motion** makes scroll animations surprisingly approachable
+2. **Tailwind CSS** custom themes with CSS variables enable seamless dark/light modes
+3. **MDX** is perfect for blog content that needs embedded React components
+
+Check out the [source code on GitHub](https://github.com/spencer-rafada) if you want to see how it all works.
+
+---
+
+*Thanks for reading! Feel free to [reach out](mailto:neilspencerrafada@gmail.com) if you have questions.*

@@ -81,7 +81,51 @@ module.exports = {
           '50%': { transform: 'translateY(-10px)' },
         },
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: 'hsl(210 40% 78%)',
+            maxWidth: 'none',
+            a: {
+              color: 'hsl(217.2 91.2% 59.8%)',
+              textDecoration: 'underline',
+              '&:hover': {
+                color: 'hsl(217.2 91.2% 69.8%)',
+              },
+            },
+            strong: { color: 'hsl(210 40% 98%)' },
+            h1: { color: 'hsl(210 40% 98%)' },
+            h2: { color: 'hsl(210 40% 98%)' },
+            h3: { color: 'hsl(210 40% 98%)' },
+            h4: { color: 'hsl(210 40% 98%)' },
+            code: {
+              color: 'hsl(217.2 91.2% 59.8%)',
+              backgroundColor: 'var(--color-code-bg)',
+              borderRadius: '0.25rem',
+              padding: '0.15rem 0.4rem',
+              fontWeight: '400',
+            },
+            'code::before': { content: 'none' },
+            'code::after': { content: 'none' },
+            pre: {
+              backgroundColor: 'var(--color-code-bg)',
+              border: '1px solid var(--color-code-border)',
+              borderRadius: '0.5rem',
+            },
+            blockquote: {
+              borderLeftColor: 'hsl(217.2 91.2% 59.8%)',
+              color: 'hsl(215 20.2% 65.1%)',
+            },
+            hr: { borderColor: 'hsl(217.2 32.6% 17.5%)' },
+            'ol > li::marker': { color: 'hsl(215 20.2% 65.1%)' },
+            'ul > li::marker': { color: 'hsl(215 20.2% 65.1%)' },
+            thead: { borderBottomColor: 'hsl(217.2 32.6% 17.5%)' },
+            'tbody tr': { borderBottomColor: 'hsl(217.2 32.6% 17.5%)' },
+            img: { borderRadius: '0.5rem' },
+          },
+        },
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 }

@@ -24,6 +24,7 @@ import {
   FileText,
   Terminal,
   ExternalLink,
+  BookOpen,
 } from 'lucide-react'
 
 interface CommandDialogProps {
@@ -78,6 +79,10 @@ export function CommandDialog({ open, onOpenChange }: CommandDialogProps) {
           <CommandItem onSelect={() => scrollToSection('contact')}>
             <Mail className="mr-2 h-4 w-4" />
             <span>Contact</span>
+          </CommandItem>
+          <CommandItem onSelect={() => { window.location.href = '/blog'; onOpenChange(false) }}>
+            <BookOpen className="mr-2 h-4 w-4" />
+            <span>Blog</span>
           </CommandItem>
         </CommandGroup>
 

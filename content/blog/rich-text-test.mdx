@@ -1,0 +1,101 @@
+---
+title: "Rich Text Test Post"
+description: "A test post to verify all rich text features render correctly: links, code blocks, images, callouts, and more."
+date: "2026-02-01"
+tags: ["Test", "MDX", "Rich Text"]
+published: false
+---
+
+## Hyperlinks
+
+Here are different link types to verify:
+
+- External link: [Google](https://google.com) should open in a new tab
+- Internal link: [Back to homepage](/) should use client-side navigation
+- Email link: [Send me an email](mailto:neilspencerrafada@gmail.com)
+- Inline URL in text: Check out [Next.js docs](https://nextjs.org/docs) for more info
+
+## Text Formatting
+
+This is **bold text** and this is *italic text* and this is ***bold italic***.
+
+You can also use `inline code` within a sentence.
+
+## Code Blocks
+
+TypeScript with syntax highlighting:
+
+```typescript
+interface BlogPost {
+  title: string
+  slug: string
+  published: boolean
+}
+
+function getPost(slug: string): BlogPost | null {
+  const posts = getAllPosts()
+  return posts.find((p) => p.slug === slug) ?? null
+}
+```
+
+A simple bash command:
+
+```bash
+npm run dev
+```
+
+## Blockquotes
+
+> "Any fool can write code that a computer can understand.
+> Good programmers write code that humans can understand."
+> — Martin Fowler
+
+## Lists
+
+### Unordered
+
+- First item
+- Second item with **bold**
+- Third item with a [link](https://example.com)
+
+### Ordered
+
+1. Step one
+2. Step two
+3. Step three
+
+## Callout Components
+
+<Callout type="info">
+This is an **info** callout. Use it for general notes and information.
+</Callout>
+
+<Callout type="warning">
+This is a **warning** callout. Use it to highlight potential issues.
+</Callout>
+
+<Callout type="tip">
+This is a **tip** callout. Use it for helpful suggestions.
+</Callout>
+
+## Horizontal Rule
+
+Content above the rule.
+
+---
+
+Content below the rule.
+
+## Table
+
+| Feature | Supported | Notes |
+|---------|-----------|-------|
+| Hyperlinks | Yes | External opens in new tab |
+| Bold/Italic | Yes | Standard markdown |
+| Code blocks | Yes | With language hint |
+| Blockquotes | Yes | Styled with blue border |
+| Callouts | Yes | Custom MDX component |
+
+---
+
+*If everything above renders correctly, the blog is working.*
