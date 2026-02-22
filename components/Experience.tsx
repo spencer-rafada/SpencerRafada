@@ -6,6 +6,14 @@ import { ExternalLink, Calendar, Building2, ChevronDown } from 'lucide-react'
 
 const experience = [
   {
+    date: 'Nov 2025 - Present',
+    company: 'BambooHR',
+    position: 'Software Engineer 2, Frontend',
+    achievements: [],
+    tools: [],
+    link: 'https://www.bamboohr.com/',
+  },
+  {
     date: '2025',
     company: 'VIUS Built',
     position: 'Software Engineer',
