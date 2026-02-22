@@ -10,7 +10,17 @@ const experience = [
     company: 'BambooHR',
     position: 'Software Engineer 2, Frontend',
     achievements: [],
-    tools: [],
+    tools: [
+      'React',
+      'Cursor',
+      'Codex',
+      'PHP',
+      'JavaScript',
+      'TypeScript',
+      'Agile',
+      'Monolith',
+      'AI-Driven',
+    ],
     link: 'https://www.bamboohr.com/',
   },
   {
