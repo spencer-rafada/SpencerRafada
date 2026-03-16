@@ -1,0 +1,112 @@
+---
+title: "I joined an AI Hackathon..."
+description: "Besides prompt engineering, I have no experience building an agent... 
+But I came out building an orchestration layer with multiple agents for an autonomous 
+business without writing a single line of code."
+date: "2026-03-15"
+tags: ["Claude Code", "Cursor", "Opus 4.6", "Agentic Development", "Hackathon", "Podium"]
+published: true
+---
+
+## Pre-Hackathon and Prompt
+
+I've been looking forward to this Hackathon to be able to meet new people, build 
+an awesome product, and learn from other builders.
+
+The prompt was simple: "AI Runs The Shop". Build an AI business that can autonomously
+operate. I think it's very straightforward. I got excited, but that excitement quickly
+turned to anxiety the night before the Hackathon. I started overthinking my weaknesses
+and lack of knowledge about building AI agents. Up to this point in my career, I've
+utilized AI tools such as Claude Code, Codex, Gemini, Lovable, etc. However, I've
+never made an *agent*. The closest I've done is utilizing OpenClaw to poll every 3 hours
+to work on a side project together via Discord and Todoist. *Let me know if you want
+to see my setup there.* I couldn't sleep until 3 am due to overthinking.
+
+I was able to sleep after asking Claude about different AI architectures such as
+ReAct (Reasoning + Action) AI architecture and wrote some goals that I want to get out of the 
+Hackathon.
+
+Goals:
+1. WIN 10K! (Shoot your shot, baby!)
+2. Lead how I can
+3. Learn and Build AI Agents
+4. Have fun and meet new people! Touch grass.
+
+## Hackathon, The Team, The Approach
+
+![Podium Hackathon Kick Off](/podium_hackathon.jpeg)
+
+Don't get me wrong. I live 10 mins out of Podium HQ, but the drive felt forever at 8:50 am
+on Saturday. I was still nervous. That feeling was gone immediately after entering the building.
+The vibe and environment were very exciting and open. You can feel everyone is just eager
+to Hack and Build. I also caught up with my friends back in uni, [Jae](https://www.linkedin.com/in/jaehyunkim2020/) and [Aoi](https://www.linkedin.com/in/aoi-kuriki-6aa160233/). 
+
+After the kick off with [Eric Rea](https://www.linkedin.com/in/ericrea/), [Dennis Steele](https://www.linkedin.com/in/steeledennis/) and [Gokul Rajaram](https://www.linkedin.com/in/gokulrajaram1/), I met my teammates 
+[Kimberly Durrant](https://www.linkedin.com/in/kjbrown-dev/) and [Carter Duncan](https://www.linkedin.com/in/carter-duncan-cs/). We brainstormed and proposed our ideas, suggesting the main plan and
+some backup plan just in case we pivot.
+
+We ended up with the AI Business: Autonomous Website Builder Business. The AI will handle
+from lead generation to building websites to outreach. Clients can access their demo
+sites as soon as they read their emails.
+
+We divided work and I volunteered myself on building the AI Orchestration Layer and the
+infrastructure of our whole codebase. I began by dumping the constraints, the prompts, the requirements,
+our idea to Claude Cowork. It gave us a good PRD to begin with based on what I fed it.
+I switched over to Claude Code and used Opus 4.6 1M Context (lifesaver, btw). It almost one-shot
+the initial PRD. I then optimized the whole pipeline by adding more agents that are aligned with our
+AI Business flow without even running the CLI. Yes, CLI. I asked it to begin by writing the prototype as a CLI. Thanks [Peter](https://steipete.me/posts/2025/shipping-at-inference-speed).
+
+What's interesting is that either Kimberly or Carter suggested to start work on separate directories
+inside the repository. I didn't know how it was going to work out, but I believed in my teammates.
+Kimberly built the website builder agent and Carter built the outreach agent. Both agents were written in Python.
+Mind you, I wrote the orchestration layer, lead hunter agent, enrichment and qualifying agents, storage agents and the project structure in TypeScript so that had me
+nervous. Well, it had a happy ending. We found out that Opus can handle translating the Python Code to
+TypeScript and even integrating it to the correct project structure. The prompt I used was simple: 
+**"My teammate built a Python agent. Help me translate and integrate it to our project structure."**
+
+After integrating everything within the project, we had Claude Code reviewing and validating the code, we fed the API keys,
+and did a lot of test runs with it. It was very exciting to see that it worked. It even sent outreach emails to the leads we found.
+
+![Autonomous Website Builder](/podium_hackathon_demo.png)
+
+![Lead Website Demo](/podium_hackathon_website_demo.png)
+
+After building the whole agentic pipeline, we built the dashboard to allow the business owner to see
+how their agents are performing.
+
+![Working Dashboard](/podium_hackathon_dashboard.png)
+
+Goals:
+
+1. WIN 10K! (Next time.)
+2. ✅ Lead how I can
+3. ✅ Learn and Build AI Agents
+4. ✅ Have Fun and Meet New People
+
+## The Numbers / Results
+
+- Scraped 260 leads across 14 cities
+- 14 categories (HVAC, plumbing, electrical, mostly businesses in the trade industry)
+- Generated 250+ sites after qualification and enrichment
+- Full Supabase integration
+- Working Dashboard
+
+Unfortunately, we didn't get to the Finals even if we finished our product an hour before
+the deadline. I was beating myself up for it afterward because I was trying to deploy
+it in the cloud and that ate up our time trying to record a presentable demo.
+
+Valuable Lesson: No matter how great of a product you have, marketing/pitch/demo is 
+as important as the building part.
+
+Jae and Aoi won the profitable award with the same idea. Great minds think alike. 
+
+## Resolution 
+
+I'm all-in on AI and this rejuvenated my excitement about building. I learned I can
+build something really valuable in a few hours. Thanks to Carter and Kimberly for
+being great teammates!
+
+The plan moving forward is to integrate the AI architecture into the project I am currently
+building. I only have RAG with it and have been hesitant in adding the agent layer because
+I'd never done it before and a bit of fear of failure (definitely not because of
+paying for the credits, lol).
