@@ -88,6 +88,31 @@ export function CommandDialog({ open, onOpenChange }: CommandDialogProps) {
 
         <CommandSeparator />
 
+        <CommandGroup heading="Projects">
+          <CommandItem onSelect={() => { window.location.href = '/projects/peek-a-boo'; onOpenChange(false) }}>
+            <FolderOpen className="mr-2 h-4 w-4" />
+            <span>Peek-a-boo</span>
+          </CommandItem>
+          <CommandItem onSelect={() => { window.location.href = '/projects/memorygram'; onOpenChange(false) }}>
+            <FolderOpen className="mr-2 h-4 w-4" />
+            <span>MemoryGram</span>
+          </CommandItem>
+          <CommandItem onSelect={() => { window.location.href = '/projects/csc-confederation'; onOpenChange(false) }}>
+            <FolderOpen className="mr-2 h-4 w-4" />
+            <span>CSC Confederation</span>
+          </CommandItem>
+          <CommandItem onSelect={() => { window.location.href = '/projects/ray-foundation'; onOpenChange(false) }}>
+            <FolderOpen className="mr-2 h-4 w-4" />
+            <span>RayFoundation</span>
+          </CommandItem>
+          <CommandItem onSelect={() => { window.location.href = '/projects/arkad'; onOpenChange(false) }}>
+            <FolderOpen className="mr-2 h-4 w-4" />
+            <span>Arkad</span>
+          </CommandItem>
+        </CommandGroup>
+
+        <CommandSeparator />
+
         {/* <CommandGroup heading="Theme">
           <CommandItem onSelect={() => setTheme('light')}>
             <Sun className="mr-2 h-4 w-4" />
